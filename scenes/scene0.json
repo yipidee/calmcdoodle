@@ -1,0 +1,41 @@
+{
+"location" : "Cal's Bedroom" ,
+"description" : "You awake in a crusty bed.\nYou take a look to the left and see that the other bed is empty. You can hear voices coming down the hall from the kitchen, people are eating breakfast.\nSuddenly you hear a shout \"Cal McDoodle! I've to be in that town in 15 minutes, and if you need a lift to work you'll get your ass out of bed!\"" ,
+"responses" :
+	{
+	"look" : "Not much to see. A bedroom with 2 single beds, an armchair between them pointed at a tv/playstation combo. There's a pile of clothes on the floor" ,
+	"getup" : "You finally get out of bed" ,
+	"dress" : "You gather the clothes from the floor and put them on" ,
+	"playstation" : "This is hardly the time for games" ,
+	"chair" : "Are you seriously thinking of having a sit down?",
+	"E" : "-"
+	} ,
+"instructions" :
+	{
+	"look" : ["look","gander","eye","sweep"] ,
+	"get" : ["get","arise","wake"] ,
+	"up" : ["up","out","arise","wake"] ,
+	"dress" : ["dress","clothes","wear"] ,
+	"playstation" : ["playstation","game"] ,
+	"chair" : ["armchair", "chair", "seat"] ,
+	"E" : ["east","right","r","R","hall","kitchen"]
+	} ,
+"prerequisites" :
+	{
+	"dress" : ["out_of_bed"]
+	} ,
+"failed_prereq_responses" :
+	{
+	"dress" : ["And how, may I ask, are you going to get dessed in bed?","There's an order to things in life, you know?","The clothes going to come get into the bed with you?"]
+	} ,
+"state_changes" :
+	{
+	"getup" : "out_of_bed"
+	} ,
+"movement" :
+	{
+	"N" : 1
+	} ,
+"defaults" :
+	["Talking like a man with half a naggin' in him","Aye, good man","Any chance of you talking some sense there?"]
+}
