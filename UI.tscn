@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://UI.gd" type="Script" id=1]
 [ext_resource path="res://roboto/Roboto-Light.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://SceneLibrary.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Inventory.tscn" type="PackedScene" id=4]
+[ext_resource path="res://MapMapper.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 28
@@ -64,5 +65,8 @@ custom_fonts/font = SubResource( 4 )
 [node name="SceneLibrary" parent="." instance=ExtResource( 3 )]
 
 [node name="Inventory" parent="." instance=ExtResource( 4 )]
+
+[node name="MapMapper" type="Node" parent="."]
+script = ExtResource( 5 )
 [connection signal="text_entered" from="VBoxContainer/Input" to="." method="_on_Input_text_entered"]
 [connection signal="moved" from="SceneLibrary" to="." method="_on_moved"]

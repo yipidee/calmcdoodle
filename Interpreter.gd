@@ -7,7 +7,6 @@ const PUNCTUATION =	[
 
 func parse_expression(text):
 	var input
-	var result
 	input = text.to_lower()
 	input = strip_punctuation(input)
 	return input

@@ -13,30 +13,34 @@
 "instructions" :
 	{
 	"look" : ["look","gander","eye","sweep"] ,
-	"get" : ["get","arise","wake"] ,
-	"up" : ["up","out","arise","wake"] ,
+	"get" : ["get","arise","wake","rise"] ,
+	"up" : ["up","out","arise","wake","rise"] ,
 	"dress" : ["dress","clothes","wear"] ,
 	"playstation" : ["playstation","game"] ,
 	"chair" : ["armchair", "chair", "seat", "sit"] ,
-	"E" : ["east","right","r","hall","kitchen"]
+	"E" : ["east","e","right","r","hall","kitchen"]
 	} ,
 "prerequisites" :
 	{
-	"dress" : ["out_of_bed"]
+	"dress" : ["out_of_bed"] ,
+	"E" : ["dressed"]
 	} ,
 "failed_prereq_responses" :
 	{
 	"dress" : ["And how, may I ask, are you going to get dessed in bed?",
 		   "There's an order to things in life, you know?",
-		   "The clothes going to come get into the bed with you?"]
+		   "The clothes going to come get into the bed with you?"] ,
+	"E" : ["And you buck naked?!",
+	       "In the nip? You're going to walk out into the hall bollock naked?"]
 	} ,
 "state_changes" :
 	{
-	"getup" : "out_of_bed"
+	"getup" : "out_of_bed" ,
+	"dress" : "dressed"
 	} ,
 "movement" :
 	{
-	"N" : 1
+	"E" : 1
 	} ,
 "defaults" :
 	["Talking like a man with half a naggin' in him",
