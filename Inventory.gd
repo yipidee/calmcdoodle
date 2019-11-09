@@ -7,5 +7,8 @@ func _ready():
 		inventory = {
 			"out_of_bed" : false,
 			"dressed" : false,
-			"has_wallet" : false
+			"has_wallet" : false,
+			"drank_tea" : false,
+			"ate_toast" : false,
+			"got_cash" : false
 		}

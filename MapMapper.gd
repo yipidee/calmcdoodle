@@ -1,7 +1,7 @@
 extends Node
 
 const map = {
-			"0" : {"out_of_bed" : 3}
+			"0" : {"out_of_bed" : 2}
 			}
 
 func get_next_node(next_node_id, inventory):

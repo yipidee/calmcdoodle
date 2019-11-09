@@ -1,0 +1,39 @@
+{
+"location" : "Shopping centre carpark" ,
+"description" : "You're in the passenger seat of the car heading into town. It's a brisk November morning, there's a frost, and the low sun is blinding. \"There'll be black ice too\" says your ma. \"I'll end up being late now because you wouldn't get out of your bed at a decent hour\".\n\"You look out the window at the passing countryside, something nice about a crisp morning. \"I don't start to 10 anyway, why are you even going at 8?\".\"You can make the schedule when you drive the car! I hear you're going out with that crew of heathens tonight. You be careful boy. Get me handbag out of the backseat there\" " ,
+"responses" :
+	{
+	"look" : "Inside of a car, what are you expecting? The bag is sitting in the backseat" ,
+	"bag" : "You reach back and grab the bag. \"you can take 15 punt out of that\"" ,
+	"town" : "-"
+	} ,
+"instructions" :
+	{
+	"look" : ["look","gander","eye","sweep"] ,
+	"bag" : ["bag","handbag","backseat","seat"] ,
+	"town" : ["town","go","drive","thanks","thank"]
+	} ,
+"prerequisites" :
+	{
+	"town" : ["got_cash"]
+	} ,
+"failed_prereq_responses" :
+	{
+	"town" : ["\"Ach, will you not hand me my bag?!\"",
+	       "\"Cal, I'm not asking much of you\"",
+		"\"Just reach back and grab my bacg for me\""]
+	} ,
+"state_changes" :
+	{
+	"bag" : "got_cash"
+	} ,
+"movement" :
+	{
+	"town" : 5
+	} ,
+"defaults" :
+	["Stop mumbling and talk properly",
+	 "Aye, good man",
+	 "But you'd put anybody's head astray listening to you",
+	 "As the saying goes, \"What in under God are you blatherin on about?\""]
+}

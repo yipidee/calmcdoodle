@@ -1,4 +1,9 @@
 .import/
 export.cfg
 export_presets.cfg
-roboto/*
+win/
+linux/
+*.exe
+*.pck
+*.x86_64
+*.zip

@@ -8,6 +8,7 @@
 	"dress" : "You gather the clothes from the floor and put them on" ,
 	"playstation" : "This is hardly the time for games" ,
 	"chair" : "Are you seriously thinking of having a sit down?",
+	"toast" : "The toast's in the kitchen, get a move on" ,
 	"E" : "-"
 	} ,
 "instructions" :
@@ -18,6 +19,7 @@
 	"dress" : ["dress","clothes","wear"] ,
 	"playstation" : ["playstation","game"] ,
 	"chair" : ["armchair", "chair", "seat", "sit"] ,
+	"toast" : ["toast","breakfast"] ,
 	"E" : ["east","e","right","r","hall","kitchen"]
 	} ,
 "prerequisites" :

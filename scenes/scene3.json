@@ -1,0 +1,42 @@
+{
+"location" : "Kitchen" ,
+"description" : "You enter the kitchen. It's a homely atmosphere, a warmth and comfort that comes with being with people you love. \"Would you like some toast Cal?\" you're asked, \"Nah, sure I just got up and came to the kitchen to not eat breakfast\" you reply. The room gets colder.\n\"Right, well I'm leaving now. Hurry up eat your toast, there's tea in the pot, pour yourself a cup. I'll warm up the car.\"" ,
+"responses" :
+	{
+	"look" : "Your family are all in the kitchen, seem to be ignoring you.\nToast is on a plate on the table, and tea is in the pot" ,
+	"maketea" : "You make and drink a ridiculously milky cup of tea. You feel the people around you shake their heads in disgust" ,
+	"toast" : "You grab a slice of toast, but the butter is just out of the fridge and hard as rock" ,
+	"E" : "-"
+	} ,
+"instructions" :
+	{
+	"look" : ["look","gander","eye","sweep"] ,
+	"make" : ["make","brew","pour"] ,
+	"tea" : ["tea","cuppa","cha"] ,
+	"toast" : ["toast","bread","eat"] ,
+	"E" : ["car","outside"]
+	} ,
+"prerequisites" :
+	{
+	"E" : ["ate_toast", "drank_tea"]
+	} ,
+"failed_prereq_responses" :
+	{
+	"E" : ["Your da looks at you and says, \"Did you finish that toast and tea?\"",
+	       "Your ma shouts at you to have your tea and toast first"]
+	} ,
+"state_changes" :
+	{
+	"maketea" : "drank_tea" ,
+	"toast" : "ate_toast"
+	} ,
+"movement" :
+	{
+	"E" : 4
+	} ,
+"defaults" :
+	["Talking like a man with half a naggin' in him",
+	 "Aye, good man",
+	 "Any chance of you talking some sense there?",
+	 "As the saying goes, \"What in under God are you blatherin on about?\""]
+}

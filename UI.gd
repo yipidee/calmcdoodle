@@ -16,7 +16,7 @@ func _on_Input_text_entered(new_text):
 
 func _on_moved(next_scene_id):
 	var next = $MapMapper.get_next_node(next_scene_id, $Inventory.inventory)
-	print(next)
+	#print(next)
 	load_scene(next)
 
 

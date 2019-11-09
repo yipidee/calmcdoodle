@@ -1,0 +1,32 @@
+{
+"location" : "Cal's Bedroom" ,
+"description" : "You walk back into your bedroom, catch the whiff of who knows what, but it reeks. Like, a condensed fart produced after a feed of honey chilli beef from the China Inn.\nDon't think you have anything left to do here" ,
+"responses" :
+	{
+	"look" : "Bombscare of a room. Were it not your own you'd be worried about your health" ,
+	"E" : "-" 
+	} ,
+"instructions" :
+	{
+	"look" : ["look","gander","eye","sweep"] ,
+	"E" : ["e","east","right","r","hall","kitchen"]
+	} ,
+"prerequisites" :
+	{
+	} ,
+"failed_prereq_responses" :
+	{
+	} ,
+"state_changes" :
+	{
+	} ,
+"movement" :
+	{
+	"E" : 1 
+	} ,
+"defaults" :
+	["Talking like a man with half a naggin' in him",
+	 "Aye, good man",
+	 "Any chance of you talking some sense there?",
+	 "As the saying goes, \"What in under God are you blatherin on about?\""]
+}

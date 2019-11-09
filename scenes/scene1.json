@@ -1,6 +1,6 @@
 {
 "location" : "Hall" ,
-"description" : "Emerging into the hall the voices come clearer, it's your family laughing and joking in the kitchen. Parents and all 4 siblings laughing in unison at something that was apparently hilarious. You can't really make it out, but you catch what you think is the tail end of the story repeated, \"..Peo, I swear to God, and he picked it himself\"\nYou're alone in the hallway, door to the kitchen in front, bedroom to your left. Your 15 minutes are running out, might need to get a move on" ,
+"description" : "Emerging into the hall the voices come clearer, it's your family laughing and joking in the kitchen. Parents and all 4 siblings laughing in unison at something that was apparently hilarious. You can't really make it out, but you catch what you think is the tail end of the story repeated, \"..Peo, I swear to God, and he picked it himself\"\nYou're alone in the hallway, door to the kitchen in front, bedroom to your left. Your 15 minutes are running out, might need to get a move on, especially if you don't want anyone putting an end to your plan to go to the Clover after work tonight if you can all get in" ,
 "responses" :
 	{
 	"look" : "Looks to have been tidied recently, nothing of note to see" ,
@@ -17,7 +17,7 @@
 	"parent" : ["parent","parents","ma","da","aul pair"] ,
 	"sibling" : ["sibling","brother","sister","brothers", "sisters"] ,
 	"N" : ["north","up","n","straight","kitchen"] ,
-	"W" : ["w","west","left","l","straight","kitchen"]
+	"W" : ["w","west","left","l","bedroom"]
 	} ,
 "prerequisites" :
 	{
@@ -31,7 +31,7 @@
 "movement" :
 	{
 	"W" : 0 ,
-	"N" : 2
+	"N" : 3
 	} ,
 "defaults" :
 	["Talking like a man with half a naggin' in him",
